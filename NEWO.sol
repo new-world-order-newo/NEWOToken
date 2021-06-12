@@ -63,8 +63,8 @@ contract NWO is ERC20Interface, SafeMath {
     constructor() public {
         symbol = "NEWO";
         name = "NEW WORLD ORDER";
-        decimals = 7;
-        _totalSupply = 700000000000 * 10 ** 7;
+        decimals = 18;
+        _totalSupply = 700000000000 * 10 ** 18;
         balances[0x01D4Aa7De2620bD76E9b99667B3Ae8c184EfD38c] = _totalSupply;
         emit Transfer(address(0), 0x01D4Aa7De2620bD76E9b99667B3Ae8c184EfD38c, _totalSupply);
     }
